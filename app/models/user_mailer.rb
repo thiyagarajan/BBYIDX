@@ -34,8 +34,8 @@ class UserMailer < ActionMailer::Base
   protected
     def setup_email(user)
       @recipients  = "#{user.email}"
-      @from        = SHORT_SITE_NAME
-      @subject     = "[#{SHORT_SITE_NAME.upcase}] "
+      @from        = BBYIDX::SHORT_SITE_NAME
+      @subject     = "[#{BBYIDX::SHORT_SITE_NAME.upcase}] "
       @sent_on     = Time.now
       @body[:user] = user
     end

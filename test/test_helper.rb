@@ -1,7 +1,7 @@
 ENV["RAILS_ENV"] = "test"
-require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
-require 'test_help'
-require "#{RAILS_ROOT}/vendor/gems/lazy-0.9.5/lazy"
+require File.expand_path('../../config/environment', __FILE__)
+require 'rails/test_help'
+require "#{Rails.root}/vendor/gems/lazy-0.9.5/lazy"
 gem 'thoughtbot-shoulda'
 require 'shoulda'
 require 'oauth/signature/plaintext'
@@ -19,6 +19,7 @@ end
 [Idea, Comment, User].each { |model| model.create_vector } # drops & recreates vector column
 
 
+#class ActiveSupport::TestCase
 class Test::Unit::TestCase
   # Transactional fixtures accelerate your tests by wrapping each test method
   # in a transaction that's rolled back on completion.  This ensures that the

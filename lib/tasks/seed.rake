@@ -1,4 +1,5 @@
 require 'fastercsv'
+
 namespace :db do
   task :default_current => [:environment] do 
     if Current.count < 1

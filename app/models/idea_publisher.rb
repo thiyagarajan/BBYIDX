@@ -5,9 +5,9 @@ class IdeaPublisher < Facebooker::Rails::Publisher
   end
 
   def new_idea_template
-    # one_line_story_template "{*actor*} has a new idea for #{SHORT_SITE_NAME}: {*idea*}."
+    # one_line_story_template "{*actor*} has a new idea for #{BBYIDX::SHORT_SITE_NAME}: {*idea*}."
     
-    short_story_template "{*actor*} has a new idea for #{SHORT_SITE_NAME}.", "{*actor*} has a new idea for #{SHORT_SITE_NAME}: {*idea*}."
+    short_story_template "{*actor*} has a new idea for #{BBYIDX::SHORT_SITE_NAME}.", "{*actor*} has a new idea for #{BBYIDX::SHORT_SITE_NAME}: {*idea*}."
   end
 
 end

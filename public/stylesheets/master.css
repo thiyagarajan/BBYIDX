@@ -1,5 +1,5 @@
 body {
-  color: #222;
+  color: #222222;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 18px; }
@@ -66,19 +66,16 @@ dd {
   margin-left: 18px; }
 
 input, textarea {
-  color: #333;
+  color: #333333;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   vertical-align: top; }
-  input.blur,
-  input.example,   textarea.blur,
-  textarea.example {
+  input.blur, input.example, textarea.blur, textarea.example {
     color: #a6abb0; }
 
 .input-text {
   margin: 0;
   padding: 7px 8px 0;
-  background: #fff url(../images/input-inner-shadow.png) left top repeat-x;
   border: 2px solid #a6abb0;
   font-size: 14px;
   -moz-border-radius: 8px;
@@ -99,7 +96,6 @@ input, textarea {
 .comment-input textarea {
   margin: 0;
   padding: 7px 8px 0;
-  background: #fff url(../images/input-inner-shadow.png) left top repeat-x;
   border: 2px solid #a6abb0;
   font-size: 13px;
   -moz-border-radius: 8px;
@@ -152,9 +148,9 @@ input, textarea {
     clear: left; }
   .form-group.inline.no-title, .form-group.inline.checkbox {
     padding-left: 160px; }
-    .form-group.inline.no-title .note,     .form-group.inline.checkbox .note {
+    .form-group.inline.no-title .note, .form-group.inline.checkbox .note {
       padding: 4px 0 0; }
-    .form-group.inline.no-title label,     .form-group.inline.checkbox label {
+    .form-group.inline.no-title label, .form-group.inline.checkbox label {
       margin-right: 0;
       padding-top: 0;
       font-size: 12px;
@@ -168,7 +164,7 @@ input, textarea {
     margin-right: 4px; }
   .form-group .note {
     margin-bottom: 8px;
-    color: #888; }
+    color: #888888; }
     .form-group .note a:hover {
       text-decoration: underline; }
 
@@ -250,8 +246,7 @@ input, textarea {
   .errorExplanation ul {
     list-style: none; }
   .errorExplanation li {
-    padding-left: 24px;
-    background: url(../images/icn/16-sq-ex.png) left center no-repeat; }
+    padding-left: 24px; }
 
 .fieldWithErrors .input-text, .fieldWithErrors .input-textarea {
   background-color: #fbe3e4;
@@ -268,18 +263,10 @@ input, textarea {
   margin: 0;
   padding: 0; }
 
-body {
-  background: url(../images/bg-noise.gif) left top repeat; }
-  body.home #wrap {
-    background: url(../images/header-bg-tall.png) left top repeat-x; }
-  body.home #content {
-    background: url(../images/header-waves.png) center 144px no-repeat;
-    min-width: 960px; }
-  body.home #masthead {
-    background-image: url(../images/header-glow-tall.png); }
+body.home #content {
+  min-width: 960px; }
 
 #masthead {
-  background: url(../images/header-glow-short.png) center 5px no-repeat;
   height: 110px;
   min-width: 960px; }
   #masthead > div {
@@ -313,7 +300,6 @@ body {
       clear: both;
       visibility: hidden; }
   #share .footer {
-    background: url(../images/header-bottom.png) left top repeat-x;
     border-top: 2px solid #00274b; }
     #share .footer > div {
       margin: 0 auto;
@@ -332,12 +318,10 @@ body {
       text-indent: -9000px; }
       #share .footer h4.one {
         margin-left: -20px;
-        background-image: url(../images/share-blurb-1.gif);
         height: 27px;
         width: 405px; }
     #share .footer .tab {
       margin: 0 auto;
-      background: url(../images/share-tab.png) center top no-repeat;
       color: #9ec8f0;
       display: block;
       font-size: 11px;
@@ -351,24 +335,12 @@ body {
         padding: 2px 10px 2px 20px;
         background-position: left center;
         background-repeat: no-repeat; }
-        #share .footer .tab span.dn {
-          background-image: url(../images/icn/14-arrow-dn.png); }
-        #share .footer .tab span.up {
-          background-image: url(../images/icn/14-arrow-up.png); }
       #share .footer .tab:hover {
-        color: #fff; }
-        #share .footer .tab:hover span.dn {
-          background-image: url(../images/icn/14-arrow-dn-hover.png); }
-        #share .footer .tab:hover span.up {
-          background-image: url(../images/icn/14-arrow-up-hover.png); }
+        color: white; }
       #share .footer .tab:active {
         color: #425d78; }
-        #share .footer .tab:active span.dn {
-          background-image: url(../images/icn/14-arrow-dn-active.png); }
-        #share .footer .tab:active span.up {
-          background-image: url(../images/icn/14-arrow-up-active.png); }
   #share label strong {
-    color: #fff; }
+    color: white; }
   #share .input-text, #share .input-textarea {
     border-color: #6883a0;
     -moz-border-radius: 0;
@@ -391,7 +363,7 @@ body {
     -webkit-border-radius: 8px; }
   #share .aside h4 {
     margin-bottom: 8px;
-    color: #fff; }
+    color: white; }
   #share .aside p {
     margin-bottom: 0; }
   #share .tab {
@@ -414,7 +386,6 @@ body {
 
 #footer {
   padding: 24px 0 48px;
-  background: #00274b url(../images/footer-bg.png) left top repeat-x;
   clear: both;
   color: #9ec8f0;
   width: 100%;
@@ -428,9 +399,9 @@ body {
   #footer h4 {
     color: #1c8af1; }
   #footer a {
-    color: #fff; }
+    color: white; }
     #footer a:hover {
-      border-bottom: 1px solid #ccc; }
+      border-bottom: 1px solid #cccccc; }
     #footer a.bordernone:hover {
       border-bottom: none; }
   #footer .nav.ext a:hover {
@@ -439,9 +410,6 @@ body {
     margin: 0;
     float: right;
     font-size: 11px; }
-
-#wrap {
-  background: url(../images/header-bg-short.png) left top repeat-x; }
 
 .currents-page,
 .main {
@@ -457,14 +425,13 @@ body {
 h2.header {
   margin: 24px 0 0;
   padding: 6px 0 12px;
-  background: url(../images/h2-line.gif) left top repeat-x;
-  color: #666;
+  color: #666666;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  text-shadow: 0 1px 2px #fff; }
+  text-shadow: 0 1px 2px white; }
   h2.header em {
-    color: #888;
+    color: #888888;
     font-family: Georgia, serif;
     font-weight: normal;
     text-transform: none; }
@@ -472,41 +439,21 @@ h2.icon {
   padding-left: 36px;
   background-position: left 6px;
   background-repeat: no-repeat; }
-  h2.icon.comments {
-    background-image: url(../images/icn/24-comment.png); }
-  h2.icon.nearby {
-    background-image: url(../images/icn/24-pin.png); }
-  h2.icon.top-rated {
-    background-image: url(../images/icn/24-heart.png); }
-  h2.icon.recent {
-    background-image: url(../images/icn/24-clock.png); }
-  h2.icon.search {
-    background-image: url(../images/icn/24-search.png); }
-  h2.icon.tag {
-    background-image: url(../images/icn/24-tag.png); }
-  h2.icon.user {
-    background-image: url(../images/icn/24-user.png); }
-    h2.icon.user.admin {
-      background-image: url(../images/icn/24-user-admin.png); }
-  h2.icon.user-edit {
-    background-image: url(../images/icn/24-user-edit.png); }
 
 img.framed {
   padding: 3px;
-  background: #fff;
-  border-bottom: 1px solid #bbb; }
+  background: white;
+  border-bottom: 1px solid #bbbbbb; }
 
 .hide {
   display: none; }
 
 .alert {
-  padding: 2px 0 2px 24px;
-  background: url(../images/icn/16-exclamation-shield.png) left center no-repeat; }
+  padding: 2px 0 2px 24px; }
 
 a.admin {
   padding-top: 3px;
-  padding-left: 25px;
-  background: url(../images/icn/16-admin.png) left top no-repeat; }
+  padding-left: 25px; }
 
 .message {
   margin-bottom: 16px; }
@@ -520,13 +467,12 @@ a.admin {
   padding: 8px 16px 6px 40px;
   background-position: 16px 9px;
   background-repeat: no-repeat;
-  border: 2px solid #ddd;
+  border: 2px solid #dddddd;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px; }
 
 .error {
   background-color: #fbe3e4;
-  background-image: url(../images/icn/16-sq-ex.png);
   border-color: #fbc2c4;
   color: #8a1f11; }
   .error a {
@@ -534,7 +480,6 @@ a.admin {
 
 .info {
   background-color: #fff6bf;
-  background-image: url(../images/icn/16-sq-exclamation.png);
   border-color: #ffd324;
   color: #514721; }
   .info a {
@@ -544,38 +489,35 @@ a.admin {
 
 .success {
   background-color: #e6efc2;
-  background-image: url(../images/icn/16-sq-checkmark.png);
   border-color: #c6d880;
   color: #264409; }
   .success a {
     color: #264409; }
 
 .btn.gray {
-  background: url(../images/btn-gray-inset.gif) left top no-repeat;
   display: block;
   height: 25px;
   margin-top: 8px;
   padding-left: 15px;
-  color: #eee;
+  color: #eeeeee;
   font-weight: bold;
   line-height: 25px;
   text-align: center;
-  text-shadow: 0 1px 2px #444; }
+  text-shadow: 0 1px 2px #444444; }
   .btn.gray span {
-    background: url(../images/btn-gray-inset.gif) left top no-repeat;
     display: block;
     height: 25px;
     padding-right: 15px;
     background-position: right top; }
   .btn.gray:hover {
     background-position: left -25px;
-    color: #fff;
+    color: white;
     text-decoration: none !important; }
     .btn.gray:hover span {
       background-position: right -25px; }
   .btn.gray:active {
     background-position: left -50px;
-    color: #bbb; }
+    color: #bbbbbb; }
     .btn.gray:active span {
       background-position: right -50px; }
 
@@ -586,7 +528,6 @@ h1#logo {
   left: 30px;
   top: 32px; }
   h1#logo a {
-    background-image: url(../images/bby-ideax-logo.png);
     height: 56px;
     width: 193px;
     background-color: transparent;
@@ -608,13 +549,11 @@ h1#logo {
   list-style: none; }
   .nav.site li {
     padding-left: 2px;
-    background: url(../images/nav-site-sep.png) left top no-repeat;
     float: left;
     height: 36px; }
     .nav.site li a {
       padding: 0 12px;
-      background: url(../images/nav-site.png) left top no-repeat;
-      color: #fff;
+      color: white;
       display: block;
       font-weight: bold;
       height: 36px;
@@ -622,36 +561,22 @@ h1#logo {
       text-shadow: 0 1px 2px #1a60a1;
       text-transform: uppercase; }
       .nav.site li a:active {
-        background-image: url(../images/nav-site-active.png);
         color: #00274b;
         text-shadow: 0 1px 2px #3b81c5; }
       .nav.site li a.active {
-        background-image: url(../images/nav-site-active.png);
         text-shadow: 0 1px 2px #063058; }
     .nav.site li.first {
       padding-left: 0;
       background: none; }
       .nav.site li.first a {
-        padding-left: 20px;
-        background-image: url(../images/nav-site-first.png); }
-        .nav.site li.first a:active, .nav.site li.first a.active {
-          background-image: url(../images/nav-site-first-active.png); }
+        padding-left: 20px; }
     .nav.site li.last a {
       padding-right: 20px;
-      background-image: url(../images/nav-site-last.png);
       background-position: right top; }
-      .nav.site li.last a:active, .nav.site li.last a.active {
-        background-image: url(../images/nav-site-last-active.png); }
-  .nav.site.alt li.first a {
-    background-image: url(../images/nav-site-first-alt.png); }
-    .nav.site.alt li.first a:active, .nav.site.alt li.first a.active {
-      background-image: url(../images/nav-site-first-alt-active.png); }
   .nav.site.alt.title-ideas {
-    padding-left: 54px;
-    background: url(../images/nav-site-title-ideas.png) left top no-repeat; }
+    padding-left: 54px; }
   .nav.site.alt.admin {
-    padding-left: 54px;
-    background: url(../images/nav-site-title-admin.png) left top no-repeat; }
+    padding-left: 54px; }
 .nav.user {
   margin: 0;
   height: 25px;
@@ -661,12 +586,10 @@ h1#logo {
   top: 0; }
   .nav.user li {
     padding-left: 2px;
-    background: url(../images/nav-user-sep.png) left top no-repeat;
     float: left;
     height: 25px; }
     .nav.user li form {
       padding: 0 10px;
-      background: url(../images/nav-user.png) left top repeat-x;
       color: #9ec8f0;
       display: block;
       font-size: 11px;
@@ -675,7 +598,6 @@ h1#logo {
       line-height: 25px; }
     .nav.user li a {
       padding: 0 10px;
-      background: url(../images/nav-user.png) left top repeat-x;
       color: #9ec8f0;
       display: block;
       font-size: 11px;
@@ -683,27 +605,22 @@ h1#logo {
       height: 25px;
       line-height: 25px; }
       .nav.user li a:hover {
-        color: #fff; }
+        color: white; }
       .nav.user li a:active {
         color: #425d78; }
     .nav.user li.first {
       padding-left: 0;
       background: none; }
       .nav.user li.first a, .nav.user li.first form {
-        padding-left: 24px;
-        background-image: url(../images/nav-user-first.png); }
+        padding-left: 24px; }
     .nav.user li.last a, .nav.user li.last form {
       padding-right: 24px;
-      background-image: url(../images/nav-user-last.png);
       background-position: right top; }
-    .nav.user li.last.search form {
-      background-image: url(../images/nav-user-last-search.png) !important; }
     .nav.user li.first.last a, .nav.user li.first.last form {
       padding-left: 0; }
     .nav.user li.search input {
       margin: 3px 0 0;
       padding: 4px 0 0 4px;
-      background: url(../images/nav-user-search.png) left top no-repeat;
       border: none;
       font-size: 11px;
       height: 14px; }
@@ -726,7 +643,6 @@ h1#logo {
       padding-left: 0;
       float: left; }
       .nav.supp li.bby a {
-        background-image: url(../images/bby-logo-sm.png);
         height: 18px;
         width: 26px;
         background-color: transparent;
@@ -740,10 +656,6 @@ h1#logo {
   background-position: left -18px;
   border-bottom: none; }
 
-body.home .nav li.first a.home,
-body.admin-home .nav li.first a.admin-home {
-  background-image: url(../images/nav-site-first-alt-active.png); }
-
 body.top-rated .nav li a.top-rated,
 body.recent .nav li a.recent,
 body.ideas .nav li a.ideas,
@@ -751,21 +663,11 @@ body.users .nav li a.users,
 body.comments .nav li a.comments,
 body.currents .nav li a.currents,
 body.life-cycles .nav li a.life-cycles {
-  background-image: url(../images/nav-site-active.png);
   text-shadow: 0 1px 2px #063058; }
-
-body.comments-page .nav li.first a.comments {
-  background-image: url(../images/nav-site-first-active.png); }
-
-body.nearby .nav li.last a.nearby,
-body.tags-page .nav li.last a.tags,
-body.client-apps .nav li.last a.client-apps {
-  background-image: url(../images/nav-site-last-active.png); }
 
 #intro {
   margin-left: -30px;
   padding: 3px 30px 0;
-  background: url(../images/intro.png) left top no-repeat;
   height: 343px;
   width: 940px; }
   #intro #submit-idea #errorExplanation {
@@ -790,7 +692,7 @@ body.client-apps .nav li.last a.client-apps {
       text-indent: -9000px; }
     #intro .header p {
       padding: 0 16px;
-      color: #444;
+      color: #444444;
       font-size: 14px;
       line-height: 19px; }
       #intro .header p strong {
@@ -806,7 +708,6 @@ body.client-apps .nav li.last a.client-apps {
         line-height: 20px; }
       #intro .header h3 small {
         margin-bottom: 8px;
-        background: url(../images/intro-or.png) center center no-repeat;
         color: #a6abb0;
         display: block;
         font-size: 14px;
@@ -837,14 +738,12 @@ body.client-apps .nav li.last a.client-apps {
   #intro .input-text {
     border-color: #425d78;
     width: 480px; }
-    #intro .input-text.blur,
-    #intro .input-text.example {
+    #intro .input-text.blur, #intro .input-text.example {
       border-color: #a6abb0; }
   #intro .input-textarea {
     border-color: #425d78;
     width: 480px !important; }
-    #intro .input-textarea.blur,
-    #intro .input-textarea.example {
+    #intro .input-textarea.blur, #intro .input-textarea.example {
       border-color: #a6abb0; }
   #intro #idea-title-group {
     background: url(../images/intro-form-icon-bulb.png) left top no-repeat; }
@@ -894,7 +793,6 @@ body.client-apps .nav li.last a.client-apps {
     margin-top: 10px;
     margin-bottom: 0;
     margin-left: 30px;
-    background: url(../images/intro-form-note.png) left top no-repeat;
     color: #425d78;
     font-size: 11px;
     height: 37px;
@@ -915,7 +813,6 @@ body.client-apps .nav li.last a.client-apps {
   margin-right: 20px;
   margin-left: -4px;
   padding-left: 4px;
-  background: url(../images/instruction.png) left top no-repeat;
   float: left;
   width: 220px; }
   .instruction h3 {
@@ -938,22 +835,13 @@ body.client-apps .nav li.last a.client-apps {
   .instruction .figure p {
     padding-top: 12px;
     padding-left: 10px;
-    background: url(../images/instruction-thumb-shadow.png) right top no-repeat;
-    color: #000;
+    color: black;
     font-size: 13px;
     text-align: center; }
-  .instruction.one h3 {
-    background-image: url(../images/instruction-1-share.png); }
-  .instruction.two h3 {
-    background-image: url(../images/instruction-2-vote.png); }
-  .instruction.three h3 {
-    background-image: url(../images/instruction-3-discuss.png); }
   .instruction.four {
     margin-right: 0; }
-    .instruction.four h3 {
-      background-image: url(../images/instruction-4-read.png); }
   .instruction p {
-    text-shadow: 0 1px 2px #fff; }
+    text-shadow: 0 1px 2px white; }
 
 .ideas-group {
   margin-right: 20px;
@@ -964,7 +852,6 @@ body.client-apps .nav li.last a.client-apps {
 
 .panel {
   margin-left: -5px;
-  background: url(../images/panel-630.gif) left top repeat-y;
   position: relative;
   width: 630px; }
   .panel .body {
@@ -977,12 +864,11 @@ body.client-apps .nav li.last a.client-apps {
     padding-left: 5px;
     width: 620px;
     padding-bottom: 7px;
-    background: url(../images/panel-630-bottom.gif) left bottom no-repeat;
     min-height: 15px; }
     .panel .footer p {
       margin-bottom: 0;
       padding: 16px 20px 12px;
-      color: #888;
+      color: #888888;
       font-size: 16px;
       min-height: 18px;
       position: relative;
@@ -990,7 +876,6 @@ body.client-apps .nav li.last a.client-apps {
       text-transform: uppercase; }
   .panel .header {
     padding: 21px 25px 0px;
-    background: url(../images/panel-630-top.gif) left top no-repeat;
     width: 580px; }
     .panel .header h2 {
       max-width: 420px;
@@ -1002,29 +887,23 @@ body.client-apps .nav li.last a.client-apps {
       .panel .header h3 span {
         vertical-align: text-bottom; }
   .panel.full {
-    background-image: url(../images/panel-950.gif);
     width: 950px; }
     .panel.full .body {
       width: 940px; }
       .panel.full .body .body-content {
         padding: 0 20px; }
     .panel.full .footer {
-      width: 940px;
-      background-image: url(../images/panel-950-bottom.gif); }
+      width: 940px; }
     .panel.full .header {
-      background-image: url(../images/panel-950-top.gif);
       width: 900px; }
   .panel.summary {
-    background-image: url(../images/panel-310.gif);
     width: 310px; }
     .panel.summary .body {
       width: 300px; }
     .panel.summary .footer {
-      width: 300px;
-      background-image: url(../images/panel-310-bottom.gif); }
+      width: 300px; }
     .panel.summary .header {
       padding: 15px 18px 12px;
-      background-image: url(../images/panel-310-top.gif);
       width: 274px; }
       .panel.summary .header h3 {
         margin-bottom: 0;
@@ -1038,34 +917,16 @@ h3.icon {
   padding-left: 24px;
   background-position: left center;
   background-repeat: no-repeat; }
-  h3.icon.nearby {
-    background-image: url(../images/icn/16-pin.png); }
-  h3.icon.popular {
-    background-image: url(../images/icn/16-heart.png); }
-  h3.icon.recent {
-    background-image: url(../images/icn/16-clock.png); }
-  h3.icon.user {
-    background-image: url(../images/icn/16-user.png); }
 
 .icon {
   padding: 2px 0 2px 24px;
   background-position: left center;
   background-repeat: no-repeat; }
-  .icon.nearby {
-    background-image: url(../images/icn/16-pin.png); }
-  .icon.popular {
-    background-image: url(../images/icn/16-heart.png); }
-  .icon.recent {
-    background-image: url(../images/icn/16-clock.png); }
-  .icon.user {
-    background-image: url(../images/icn/16-user.png); }
-  .icon.twitter {
-    background-image: url(../images/icn/16-twitter.png); }
 
 .pagination {
   margin-bottom: 0;
   padding: 16px 10px 12px;
-  color: #888;
+  color: #888888;
   font-size: 14px;
   min-height: 18px;
   position: relative;
@@ -1073,9 +934,9 @@ h3.icon {
   text-transform: uppercase; }
   .pagination a {
     padding: 4px 5px 3px;
-    color: #888; }
+    color: #888888; }
     .pagination a:hover {
-      background-color: #eee;
+      background-color: #eeeeee;
       -moz-border-radius: 4px;
       -webkit-border-radius: 4px; }
     .pagination a.prev_page:hover, .pagination a.next_page:hover {
@@ -1083,7 +944,7 @@ h3.icon {
       text-decoration: underline; }
   .pagination span {
     padding: 4px 8px 3px;
-    color: #888; }
+    color: #888888; }
   .pagination .gap {
     padding: 0; }
   .pagination .prev_page {
@@ -1103,12 +964,12 @@ h3.icon {
     .pagination .next_page.disabled {
       background-image: url(../images/pagination-next-off.png); }
   .pagination .current {
-    background: #888;
-    color: #fff;
+    background: #888888;
+    color: white;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px; }
   .pagination .disabled {
-    color: #ccc; }
+    color: #cccccc; }
 
 .actions {
   margin: 0;
@@ -1119,24 +980,22 @@ h3.icon {
   .actions li {
     margin-left: 8px;
     padding-left: 5px;
-    background: url(../images/header-meta-left.png) left top no-repeat;
     float: left;
     height: 25px; }
     .actions li a {
       padding: 5px 10px 0 2px;
-      background: url(../images/header-meta-right.png) right top no-repeat;
-      color: #444;
+      color: #444444;
       display: block;
       font-size: 11px;
       height: 20px;
-      text-shadow: 0 1px 1px #fff; }
+      text-shadow: 0 1px 1px white; }
       .actions li a img {
         margin-right: 2px;
         vertical-align: top; }
       .actions li a:hover {
         color: #425d78; }
       .actions li a:active {
-        color: #444; }
+        color: #444444; }
     .actions li.input {
       padding-left: 0;
       background: none; }
@@ -1144,14 +1003,12 @@ h3.icon {
     margin-right: 16px;
     padding-top: 8px;
     padding-left: 12px;
-    background: url(../images/header-meta-textbox-sm.png) left top no-repeat;
     border: none;
     font-size: 14px;
     height: 18px;
     outline: none;
     width: 60px; }
     .actions .input-custom.long {
-      background: url(../images/header-meta-textbox-lg.png) left top no-repeat;
       width: 210px; }
   .actions .input-select {
     margin-top: 3px;
@@ -1171,13 +1028,9 @@ h3.icon {
 
 .inset {
   padding-top: 6px;
-  background: url(../images/inset-top.png) center top no-repeat;
   overflow: hidden; }
   .inset > div {
-    padding-bottom: 5px;
-    background: url(../images/inset-bottom.png) center bottom no-repeat; }
-    .inset > div > div {
-      background: url(../images/inset.gif) center top repeat-y; }
+    padding-bottom: 5px; }
 
 .group {
   padding: 18px 0; }
@@ -1185,14 +1038,14 @@ h3.icon {
     padding-left: 20px; }
   .group.slate {
     background: #e6ebf0;
-    border-top: 1px solid #fff;
+    border-top: 1px solid white;
     border-bottom: 1px solid #ced6dd; }
   .group form label {
-    text-shadow: 0 1px 2px #fff; }
+    text-shadow: 0 1px 2px white; }
     .group form label em {
       font-weight: normal;
       text-transform: uppercase;
-      color: #666;
+      color: #666666;
       font-size: 10px; }
 
 .content {
@@ -1215,18 +1068,8 @@ h3.icon {
       padding-left: 20px;
       background-position: left top;
       background-repeat: no-repeat; }
-      .idea .entry-meta li.comments {
-        background-image: url(../images/icn/16-sq-chat.png); }
-      .idea .entry-meta li.tags {
-        background-image: url(../images/icn/16-sq-tag.png); }
       .idea .entry-meta li.ideas {
         background-image: url(../images/idea-marker.png); }
-      .idea .entry-meta li.users {
-        background-image: url(../images/icn/16-user.png); }
-      .idea .entry-meta li.flag {
-        background-image: url(../images/icn/16-sq-flag.png); }
-      .idea .entry-meta li.sharethis {
-        background-image: url(../images/icn/16-addthis.gif); }
   .idea.main .header {
     padding-right: 155px;
     width: 450px; }
@@ -1268,14 +1111,12 @@ h3.icon {
   .idea.teaser {
     margin: 0 auto 4px;
     padding-bottom: 3px;
-    background: url(../images/idea-teaser-bottom.png) left bottom no-repeat;
     width: 606px; }
     .idea.teaser:last-child {
       margin-bottom: 0; }
     .idea.teaser > div {
       padding-right: 20px;
-      padding-left: 153px;
-      background: url(../images/idea-teaser-top.png) left top no-repeat; }
+      padding-left: 153px; }
       .idea.teaser > div.the-current {
         padding-left: 20px; }
     .idea.teaser .posted {
@@ -1332,14 +1173,13 @@ h3.icon {
       display: block;
       overflow: hidden;
       text-indent: -9000px; }
-      .idea.teaser .flag:hover, .idea.teaser .flag.flagged,       .idea.teaser .flagged:hover, .idea.teaser .flagged.flagged {
+      .idea.teaser .flag:hover, .idea.teaser .flag.flagged, .idea.teaser .flagged:hover, .idea.teaser .flagged.flagged {
         background-position: left -21px; }
-      .idea.teaser .flag .flag:active,       .idea.teaser .flagged .flag:active {
+      .idea.teaser .flag .flag:active, .idea.teaser .flagged .flag:active {
         background-position: left -42px; }
   .idea.mini {
     margin: 0 2px;
     padding-bottom: 2px;
-    background: #b6dbff url(../images/idea-mini-bg.png) left bottom repeat-x;
     height: 58px; }
     .idea.mini .title {
       display: table-cell;
@@ -1368,7 +1208,6 @@ h3.icon {
     .idea.mini .vote-count {
       margin-bottom: 1px;
       padding-top: 0;
-      background: url(../images/idea-vote-mini-bg.png) left top no-repeat;
       font-size: 18px;
       height: 37px;
       line-height: 37px;
@@ -1393,7 +1232,6 @@ h3.icon {
       -webkit-border-top-right-radius: 4px; }
     .idea.mini.last-child, .idea.mini.last {
       padding-bottom: 2px;
-      background-image: url(../images/idea-mini-bg-alt.png);
       border-bottom: 1px solid #92c6f8;
       -moz-border-radius: 0 0 4px 4px;
       -webkit-border-bottom-right-radius: 4px;
@@ -1432,7 +1270,6 @@ h3.icon {
   .vote .vote-count {
     margin-bottom: 3px;
     padding-top: 14px;
-    background: url(../images/idea-vote-teaser-bg.png) left top no-repeat;
     color: #00274b;
     font-size: 50px;
     font-weight: bold;
@@ -1453,8 +1290,7 @@ h3.icon {
 .idea-meta,
 .current-meta {
   padding: 18px 0;
-  background: #eee url(../images/idea-meta-bottom.png) left bottom repeat-x;
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #cccccc; }
   .idea-meta > div,
   .current-meta > div {
     margin-left: 20px;
@@ -1467,10 +1303,10 @@ h3.icon {
   .idea-meta h3,
   .current-meta h3 {
     margin-bottom: 8px;
-    color: #888;
+    color: #888888;
     font-size: 16px;
     line-height: 22px;
-    text-shadow: 0 1px 2px #fff; }
+    text-shadow: 0 1px 2px white; }
   .idea-meta li a:hover,
   .current-meta li a:hover {
     text-decoration: underline; }
@@ -1498,7 +1334,6 @@ h3.icon {
   margin-top: 10px;
   margin-bottom: 0;
   margin-left: 20px;
-  background: url(../images/intro-form-note.png) left top no-repeat;
   color: #425d78;
   font-size: 11px;
   height: 37px;
@@ -1512,12 +1347,10 @@ h3.icon {
 .comment {
   margin: 0 auto 4px;
   background: red;
-  background: url(../images/comment-bottom.gif) left bottom no-repeat;
   min-height: 47px;
   position: relative;
   width: 606px; }
   .comment .comment-inner {
-    background: url(../images/comment-bg.gif) left bottom repeat-y;
     margin-bottom: 30px; }
   .comment:last-child {
     margin-bottom: 0; }
@@ -1532,7 +1365,7 @@ h3.icon {
       text-decoration: underline; }
   .comment .posted {
     margin-bottom: 8px;
-    color: #888;
+    color: #888888;
     font-size: 13px !important;
     font-weight: normal; }
   .comment .flag, .comment .flagged {
@@ -1548,9 +1381,9 @@ h3.icon {
     display: block;
     overflow: hidden;
     text-indent: -9000px; }
-    .comment .flag:hover, .comment .flag.flagged,     .comment .flagged:hover, .comment .flagged.flagged {
+    .comment .flag:hover, .comment .flag.flagged, .comment .flagged:hover, .comment .flagged.flagged {
       background-position: left -20px; }
-    .comment .flag.flag:active,     .comment .flagged.flag:active {
+    .comment .flag.flag:active, .comment .flagged.flag:active {
       background-position: left -40px; }
   .comment:after {
     content: ".";
@@ -1561,9 +1394,8 @@ h3.icon {
 
 .comment-content, .edit-comment-content {
   padding: 12px 18px 0 170px;
-  background: url(../images/comment-top.png) left top no-repeat;
   width: 418px; }
-  .comment-content p:last-child,   .edit-comment-content p:last-child {
+  .comment-content p:last-child, .edit-comment-content p:last-child {
     margin-bottom: 0; }
 
 .edit-comment-content textarea {
@@ -1595,7 +1427,7 @@ h3.icon {
         text-decoration: underline; }
     .voted-for li abbr {
       margin-left: 8px;
-      color: #888;
+      color: #888888;
       font-weight: normal; }
     .voted-for li:last-child {
       margin-bottom: 0; }
@@ -1618,7 +1450,6 @@ h3.icon {
   .map-enlarge a {
     margin-left: -20px;
     padding-left: 20px;
-    background: url(../images/icn/16-enlarge.png) left center no-repeat;
     font-weight: bold; }
 
 .tag-cloud {
@@ -1637,7 +1468,7 @@ h3.icon {
     vertical-align: baseline;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    text-shadow: 0 1px 2px #fff; }
+    text-shadow: 0 1px 2px white; }
     .tag-cloud a span {
       color: #425d78;
       font-weight: bold; }
@@ -1657,16 +1488,16 @@ h3.icon {
 .list-block {
   margin: 0;
   list-style: none;
-  text-shadow: 0 1px 2px #fff; }
+  text-shadow: 0 1px 2px white; }
   .list-block li {
     margin-bottom: 1px;
     padding: 4px 8px 3px 0;
-    background: #eee;
+    background: #eeeeee;
     border: 1px solid #f9f9f9; }
     .list-block li strong {
       margin-right: 8px;
       border-right: 1px solid #f9f9f9;
-      color: #888;
+      color: #888888;
       float: left;
       font-size: 14px;
       min-width: 30px;
@@ -1675,11 +1506,11 @@ h3.icon {
       float: left;
       font-weight: bold; }
     .list-block li em {
-      color: #888;
+      color: #888888;
       float: right;
       font-style: normal; }
     .list-block li.alt {
-      background: #E4E4E4; }
+      background: #e4e4e4; }
     .list-block li:first-child {
       -moz-border-radius: 4px 4px 0 0;
       -webkit-border-top-left-radius: 4px;

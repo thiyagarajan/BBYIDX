@@ -12,6 +12,10 @@ class Comment < ActiveRecord::Base
   
   belongs_to :idea
   belongs_to :author, :class_name => 'User'
+
+  before_create :detect_spam
+  after_create :record_contribution
+  
   def comment_type
     'comment'
   end
@@ -39,13 +43,13 @@ class Comment < ActiveRecord::Base
     acts_as_tsearch :fields=>%w(text)
   end
   
-  def after_create
-    author.record_contribution! :comment
+  def detect_spam
+    self.marked_spam = self.spam? if Rakismet::KEY
+    true
   end
   
-  def before_create
-    self.marked_spam=self.spam? if Rakismet::KEY
-    true
+  def record_contribution
+    author.record_contribution! :comment
   end
   
   def marked_spam=(spam)

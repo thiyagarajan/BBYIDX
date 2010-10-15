@@ -32,7 +32,7 @@ class IdeasController < ApplicationController
         # Users automatically vote for their own ideas:
         @idea.add_vote!(@idea.inventor)
         
-        if TWITTER_ENABLED && @idea.inventor.tweet_ideas?
+        if BBYIDX::TWITTER_ENABLED && @idea.inventor.tweet_ideas?
           begin
             tweet_idea(@idea)
           rescue Exception  => exception
@@ -41,7 +41,7 @@ class IdeasController < ApplicationController
           end
         end
         
-        if FACEBOOK_ENABLED && @idea.inventor.is_facebook_user?
+        if BBYIDX::FACEBOOK_ENABLED && @idea.inventor.is_facebook_user?
           begin
             facebook_publish_idea(@idea)
           rescue Exception  => exception
@@ -149,15 +149,15 @@ class IdeasController < ApplicationController
     if params[:search]
       current_objects
       @feeds << {
-        :href => idea_search_url(params[:search], :format => 'rss'),
-        :title => "#{LONG_SITE_NAME}: #{ERB::Util.h @query_title}" }
+        :href => idea_search_url(params[:search], :format => :rss),
+        :title => "#{BBYIDX::LONG_SITE_NAME}: #{ERB::Util.h @query_title}" }
     end
   end
   
   def add_comments_feed
     @feeds << {
-      :href => formatted_idea_comments_url(current_object, 'rss'),
-      :title => "#{LONG_SITE_NAME}: Comments on \"#{ERB::Util.h(ERB::Util.h current_object.title)}\"" }
+      :href => idea_comments_url(current_object, :format => :rss),
+      :title => "#{BBYIDX::LONG_SITE_NAME}: Comments on \"#{ERB::Util.h(ERB::Util.h current_object.title)}\"" }
   end
   
   include ApplicationHelper
@@ -181,7 +181,7 @@ private
   
   def facebook_publish_idea(idea)
       link_data = [{
-        :text => "View More at #{SHORT_SITE_NAME}",
+        :text => "View More at #{BBYIDX::SHORT_SITE_NAME}",
         :href => idea_url(idea)
       }].to_json
       attachment_data = {
@@ -189,7 +189,7 @@ private
         :media => [ { :type => "image", :src => "#{root_url}images/logo_blue.jpg", :href => idea_url(idea) } ]
       }.to_json
       
-      flash[:facebook_publish] = "facebook_publish_stream( 'has an idea for #{SHORT_SITE_NAME}: #{idea.title}', #{attachment_data}, #{link_data});"
+      flash[:facebook_publish] = "facebook_publish_stream( 'has an idea for #{BBYIDX::SHORT_SITE_NAME}: #{idea.title}', #{attachment_data}, #{link_data});"
   end
   
   def tweet_idea(idea)
